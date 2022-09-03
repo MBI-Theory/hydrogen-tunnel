@@ -1,0 +1,34 @@
+ &gt
+   verbose            = 1
+   comment            = 'Yukawa potential: 3c, outgoing resonance search, F=0.050, M=0, NB=0, NC=0'
+   task               = 'outgoing'
+   boundary           = 'asymptotic'
+   boundary_solution  = 'outgoing'
+   boundary_index     = 1
+   outgoing_solver    = 'root'
+   efield             = 0.050
+   energy_guess       = (-0.5007914097556122153,-0.7073337981537992395e-7
+   potential          = 'yukawa'
+   pot_param_real     = -1.90792, 1.0,
+   pot_param_int      = -1,
+   n_channels         = 3,
+   mval               = 0
+   znuc               = 0.0
+   xi_max          =  12.0
+   xi_npts         = 120
+   xi_maxorder     =  60
+   eta_max         =  12.0
+   eta_npts        = 120
+   eta_maxorder    =  60
+   asymp_order     = 200
+   zeta_tol        =  -1.
+   energy_tol      =  1e-16
+   file_bound      =  "('gyu000-0_050-3c-out-quad-b-',i0,'.table')"
+   file_continuum  =  "('gyu000-0_050-3c-out-quad-c-',i0,'.table')"
+   file_coupling   =  ""
+   file_total_mode =  "wavefunction"
+   file_total      =  "gyu000-0_050-3c-out-quad.table"
+   file_cartesian  =  "gyu000-0_050-3c-out-cartesian-quad.table"
+   cartesian_npts  = -30, 30, 0, 0, -80, 40
+   cartesian_dx    =  0.25
+ /

@@ -1,0 +1,21 @@
+ &ht_v2
+   verbose         =  1
+   comment         =  'Search for the resonance position (outgoing boundary), F=0.020, M=0, NB=1, NC=0'
+   task            =  'outgoing'
+   efield          =  0.020
+   energy_guess    =  (-0.08898,-0.01545)
+   zeta_guess      =  (3.4,0.0)
+   mval            =  0
+   znuc            =  1.0
+   xi2_max         =  80.0
+   xi_npts         = 160
+   xi_maxorder     =  60
+   eta2_max        =  120.0
+   eta_npts        =  240
+   eta_maxorder    =  60
+   asymp_order     =  200
+   zeta_tol        =  -1.
+   energy_tol      =  -1.
+   file_bound      =  'h010-0_020-quad-b.table'
+   file_continuum  =  'h010-0_020-quad-c.table'
+ /

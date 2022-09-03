@@ -1,0 +1,22 @@
+ &ht_v2
+   verbose         =  1
+   comment         =  'Resonance position (real axis), F=0.100, M=1, NB=0, NC=0'
+   task            =  'energy'
+   efield          =  0.100
+   energy_guess    =  (-0.1540121214511620366757072486708574,-0.2018787445757641354983504606348625)
+   energy_single   =  (-0.1540121214511620366757072486708574,0.0)
+   zeta_guess      =  (3.3,0.8)
+   mval            =  1
+   znuc            =  1.0
+   xi2_max         =  60.0
+   xi_npts         = 120
+   xi_maxorder     =  60
+   eta2_max        =  120.0
+   eta_npts        =  240
+   eta_maxorder    =  60
+   asymp_order     =  200
+   zeta_tol        =  -1.
+   energy_tol      =  1e-26
+   file_bound      =  'h100-0_100-quad-b.table'
+   file_continuum  =  'h100-0_100-quad-c.table'
+ /

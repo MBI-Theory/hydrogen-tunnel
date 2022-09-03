@@ -1,0 +1,27 @@
+ &gt
+   verbose         =  1
+   comment         =  'Search for the resonance position (outgoing boundary), F=0.100, M=0, NB=0, NC=0'
+   task            =  'outgoing'
+   outgoing_solver =  'root'
+   efield          =  0.100
+   energy_guess    =  (-0.5274181751018324361,-0.7269056764924474438E-002)
+   potential       =  'hydrogenic'
+   mval            =  0
+   znuc            =  1.0
+   xi_max          =  12.0
+   xi_npts         = 120
+   xi_maxorder     =  60
+   eta_max         =  12.0
+   eta_npts        = 120
+   eta_maxorder    =  60
+   asymp_order     = 200
+   zeta_tol        =  -1.
+   energy_tol      =  -1.
+   file_bound      =  "('gh000-0_100-quad-b-',i0,'.table')"
+   file_continuum  =  "('gh000-0_100-quad-c-',i0,'.table')"
+   file_total_mode =  "wavefunction"
+   file_total      =  "gh000-0_100-quad.table"
+   file_cartesian  =  "gh000-0_100-cartesian-quad.table"
+   cartesian_npts  = -30, 30, 0, 0, -80, 40
+   cartesian_dx    =  0.25
+ /

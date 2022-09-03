@@ -1,0 +1,38 @@
+ &gt
+   verbose           = 1
+   comment           = 'Helium 1-electron model, 2c, minflux solution for F=0.15, M=0, NB=0, NC=0'
+   task              = 'minflux real'
+   boundary          = 'asymptotic'
+   boundary_solution = 'incoming'
+   boundary_index    = 1
+   outgoing_solver   = 'min'
+   n_channels        = 2
+   base_channel      = 1
+   main_channel      = 1
+   mval              = 0
+   efield            = 0.150
+   energy_guess      = (-0.9134227869804572944,0.0)
+   potential         = '[Tong05] He'
+   znuc              = 1.0
+   xi_max            =  8.0
+   xi_npts           =   80
+   xi_maxorder       =   60
+   xi_npts_guess     =  120
+   eta_max           = 18.0
+   eta_npts          =  180
+   eta_maxorder      =   60
+   asymp_order       =  200
+   energy_step       = 0.01
+   zeta_tol          = -1
+   zeta_stab_cos     = 0.9
+   energy_tol        = 1e-20
+   file_bound         =  "('ghe000-0_150-2c-minflux-quad-b-',i0,'.table')"
+   file_continuum     =  "('ghe000-0_150-2c-minflux-quad-c-',i0,'.table')"
+   file_coupling      =  ""
+   file_total_mode    =  "asymptotic incoming"
+   file_total         =  "ghe000-0_150-2c-minflux-quad.table"
+   file_cartesian     =  "ghe000-0_150-2c-minflux-cartesian-quad.table"
+   file_bohm          =  "ghe000-0_150-2c-minflux-bohm-quad.table"
+   cartesian_npts     = -30, 30, 0, 0, -80, 40
+   cartesian_dx       =  0.25
+ /

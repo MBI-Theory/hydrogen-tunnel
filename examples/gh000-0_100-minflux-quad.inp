@@ -1,0 +1,28 @@
+ &gt
+   verbose           =  1
+   comment           =  'Search for the flux minumum (outgoing boundary), F=0.100, M=0, NB=0, NC=0'
+   task              =  'minflux real'
+   outgoing_solver   =  'min'
+   efield            =  0.100
+   energy_guess      =  (-0.5269043311372160198,0.0)
+   potential         =  'hydrogenic'
+   mval              =  0
+   znuc              =  1.0
+   xi_max            =  12.0
+   xi_npts           = 120
+   xi_maxorder       =  60
+   eta_max           =  12.0
+   eta_npts          = 120
+   eta_maxorder      =  60
+   asymp_order       = 200
+   zeta_tol          =  -1.
+   energy_tol        = 1e-24,
+   file_bound        =  "('gh000-0_100-minflux-quad-b-',i0,'.table')"
+   file_continuum    =  "('gh000-0_100-minflux-quad-c-',i0,'.table')"
+ ! file_total_mode   =  "wavefunction"
+   file_total_mode   =  "fourier outgoing"
+   file_total        =  "gh000-0_100-minflux-quad.table"
+   file_cartesian    =  "gh000-0_100-cartesian-minflux-quad.table"
+   cartesian_npts    = -30, 30, 0, 0, -80, 40
+   cartesian_dx      =  0.25
+ /
