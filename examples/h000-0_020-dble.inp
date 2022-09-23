@@ -15,7 +15,7 @@
    eta_maxorder    =  60
    asymp_order     =  200
    zeta_tol        =  -1.
-   energy_tol      =  -1.
+   energy_tol      =  1e-13
    file_bound      =  'h000-0_020-dble-b.table'
    file_continuum  =  'h000-0_020-dble-c.table'
  /

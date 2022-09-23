@@ -119,6 +119,13 @@ module general_tunnel
     call solve_continuum(verbose,energy)   ! general_tunnel_continuum.f90
     !
     if (verbose>=1) then
+      write (out,"()")
+      write (out,"('            Located solution at energy = ',2g44.34e3)") energy
+      write (out,"('Outgoing amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_out
+      write (out,"('Incoming amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_in
+      write (out,"()")
+      call flush_wrapper (out)
+      !
       write (out,"(/'Using solutions to generate ',a,' for plotting'/)") trim(file_total_mode)
       if (file_total_mode(1:8)=='reverse ') then
         !
@@ -186,9 +193,9 @@ module general_tunnel
     call fr_finalize(root)
     !
     write (out,"()")
-    write (out,"('    Outgoing solution is at the energy = ',2g44.34e3)") energy
-    write (out,"('Outgoing amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_out
-    write (out,"('Incoming amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_in
+    write (out,"('Optimized solution (root) is at the energy = ',2g44.34e3)") energy
+    write (out,"('    Outgoing amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_out
+    write (out,"('    Incoming amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_in
     write (out,"()")
     call flush_wrapper (out)
     !
@@ -277,9 +284,9 @@ module general_tunnel
     call fm_finalize(root)
     !
     write (out,"()")
-    write (out,"('    Outgoing solution is at the energy = ',2g44.34e3)") energy
-    write (out,"('Outgoing amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_out
-    write (out,"('Incoming amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_in
+    write (out,"('Optimized solution (min) is at the energy = ',2g44.34e3)") energy
+    write (out,"('   Outgoing amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_out
+    write (out,"('   Incoming amplitude in the main channel = ',2g44.34e3)") continuum(main_channel)%c_in
     write (out,"()")
     call flush_wrapper (out)
     !

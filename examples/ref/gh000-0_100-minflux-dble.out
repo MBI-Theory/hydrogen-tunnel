@@ -1,7 +1,7 @@
-Version: Plain vanilla, built on balrog at Tue Aug 30 02:36:54 PM CEST 2022
+Version: Plain vanilla, built on balrog.mbi-berlin.de at Fri Sep 23 06:33:15 PM CEST 2022
 
-Compiler: GCC version 12.1.1 20220721 [revision 4f15d2234608e82159d030dadb17af678cfad626]
-Build flags: -cpp -I . -D_REENTRANT -D __BUILD_ID__="Plain vanilla, built on balrog at Tue Aug 30 02:36:54 PM CEST 2022" -mtune=generic -march=x86-64 -O -fopenmp -fpre-include=/usr/include/finclude/math-vector-fortran.h
+Compiler: GCC version 12.2.1 20220830 [revision e927d1cf141f221c5a32574bde0913307e140984]
+Build flags: -cpp -I . -D_REENTRANT -D __BUILD_ID__="Plain vanilla, built on balrog.mbi-berlin.de at Fri Sep 23 06:33:15 PM CEST 2022" -mtune=generic -march=x86-64 -O -fopenmp -fpre-include=/usr/include/finclude/math-vector-fortran.h
 
   Integer kind = 4 (9 decimals)
      Real kind = 8 (15 decimals)
@@ -50,7 +50,7 @@ Aux. real kind = 8 (15 decimals)
  ENERGY_GUESS=(-0.52730600000000005,0.0000000000000000),
  ENERGY_STEP= 0.10000000000000001     ,
  ZETA_TOL= -1.0000000000000000     ,
- ZETA_STAB_COS= 0.50000000000000000     ,
+ ZETA_STAB_COS= 0.90000000000000002     ,
  ENERGY_TOL= -1.0000000000000000     ,
  WAVEFUNCTION_TOL= -10000.000000000000     ,
  BOUNDARY_TOL= -1.0000000000000000     ,
@@ -409,7 +409,7 @@ At energy = -.5269043311413829089318028 .000000000000000000000000 incoming = 0.7
 Solving for energy =  -0.5269043311413786900843093        0.000000000000000000000000     
 
 At energy = -.5269043311413786900843093 .000000000000000000000000 incoming = 0.79881308794669828033E-1 0.96329717731044747775E-1 (main) 0.15660438012892147902E-1 (total)
-On the linear search step 1 displacement is 0.4016688586E-3 function = 0.1566043801E-1
+On the linear search step 1 displacement is 0.401668858619E-3 function = .156604380128916274850237E-1
 Solving for energy =  -0.5269043311413666996756433        0.000000000000000000000000     
 
 At energy = -.5269043311413666996756433 .000000000000000000000000 incoming = 0.79881308794831615283E-1 0.96329717730908676065E-1 (main) 0.15660438012891780141E-1 (total)
@@ -488,7 +488,7 @@ At energy = -.5269043311372155757865698 .000000000000000000000000 incoming = 0.7
 Solving for energy =  -0.5269043311372137994297304        0.000000000000000000000000     
 
 At energy = -.5269043311372137994297304 .000000000000000000000000 incoming = 0.79881308850628551799E-1 0.96329717684639465380E-1 (main) 0.15660438012891849530E-1 (total)
-On the linear search step 2 displacement is 0.4165112699E-11 function = 0.1566043801E-1
+On the linear search step 2 displacement is 0.416511269918E-11 function = .156604380128914262571005E-1
 Solving for energy =  -0.5269043311372015869764596        0.000000000000000000000000     
 
 At energy = -.5269043311372015869764596 .000000000000000000000000 incoming = 0.79881308850792684395E-1 0.96329717684505947184E-1 (main) 0.15660438012892349130E-1 (total)
@@ -531,7 +531,7 @@ At energy = -.5269043311372181292995265 .000000000000000000000000 incoming = 0.7
 Solving for energy =  -0.5269043311372152427196625        0.000000000000000000000000     
 
 At energy = -.5269043311372152427196625 .000000000000000000000000 incoming = 0.79881308850606541627E-1 0.96329717684658061616E-1 (main) 0.15660438012891911980E-1 (total)
-On the linear search step 3 displacement is 0.2220446049E-15 function = 0.1566043801E-1
+On the linear search step 3 displacement is 0.222044604925E-15 function = .156604380128915234016151E-1
 Optimization of outgoing solution converged.
 Solving for energy =  -0.5269043311372160198757797        0.000000000000000000000000     
 
@@ -680,27 +680,36 @@ Solving for energy =  -0.5269043311372160198757797        0.00000000000000000000
   ----                ----------               ----------              ------------             ------------              ------------             ------------
      1     0.18507726304576        -0.98272397279373         -0.79881308850595E-001    0.96329717684668E-001     0.79881308850595E-001    0.96329717684668E-001
 
-At energy = -.5269043311372160198757797 .000000000000000000000000 incoming = 0.79881308850594731630E-1 0.96329717684668261790E-1 (main) 0.15660438012891995246E-1 (total)
-
-    Outgoing solution is at the energy =   -0.5269043311372160198757796933932696         0.000000000000000000000000000000000     
+            Located solution at energy =   -0.5269043311372160198757796933932696         0.000000000000000000000000000000000     
 Outgoing amplitude in the main channel =   -0.7988130885059473162979060134603060E-001   0.9632971768466826179011519570849487E-001
 Incoming amplitude in the main channel =    0.7988130885059473162979060134603060E-001   0.9632971768466826179011519570849487E-001
 
 
-              Timing data at 2022/09/02 11:26:03
+Using solutions to generate wavefunction for plotting
+
+
+At energy = -.5269043311372160198757797 .000000000000000000000000 incoming = 0.79881308850594731630E-1 0.96329717684668261790E-1 (main) 0.15660438012891995246E-1 (total)
+
+Optimized solution (min) is at the energy =   -0.5269043311372160198757796933932696         0.000000000000000000000000000000000     
+   Outgoing amplitude in the main channel =   -0.7988130885059473162979060134603060E-001   0.9632971768466826179011519570849487E-001
+   Incoming amplitude in the main channel =    0.7988130885059473162979060134603060E-001   0.9632971768466826179011519570849487E-001
+
+
+              Timing data at 2022/09/23 18:45:06
 
                                                        Total time (seconds)           Self time (seconds)
  Timer                                   Calls         --------------------           -------------------
  -----                                   -----           Real           CPU            Real           CPU
 
- start                                      1.          108.0         109.1             0.0           0.0
- Outgoing solution (min)                    1.          107.8         108.3             0.0           0.0
- Solve single energy                       76.          107.8         108.3             5.6          35.5
- Guess zeta1                               76.            4.8           9.8             4.8           9.8
- Bound solutions                           76.           96.9          58.2            96.9          58.2
- Continuum direction                       76.            0.2           2.0             0.0           0.1
- Continuum outbound                        76.            0.2           1.7             0.2           1.7
- Dump Cartesian                             1.            0.2           1.6             0.2           1.6
+ start                                      1.            3.2          31.4             0.0           0.0
+ Outgoing solution (min)                    1.            3.2          31.3             0.0           0.1
+ Solve single energy                       76.            3.2          31.2             0.0           0.4
+ Guess zeta1                               76.            1.0          20.1             1.0          20.1
+ Bound solutions                           76.            1.9           6.6             1.9           6.6
+ Continuum direction                       76.            0.1           3.4             0.0           0.2
+ Continuum outbound                        76.            0.1           3.2             0.1           3.2
+ Dump total                                 1.            0.1           0.3             0.1           0.3
+ Dump Cartesian                             1.            0.1           0.5             0.1           0.5
 
- (  4 timers contributing less than 1% are not shown)
+ (  3 timers contributing less than 1% are not shown)
 

@@ -16,7 +16,7 @@
    eta_maxorder      =  60
    asymp_order       = 200
    zeta_tol          =  -1.
-   energy_tol        =  -1.
+   energy_tol        =  1e-12
    file_bound        =  "('gh000-0_100-minflux-dble-b-',i0,'.table')"
    file_continuum    =  "('gh000-0_100-minflux-dble-c-',i0,'.table')"
    file_total_mode   =  "wavefunction"

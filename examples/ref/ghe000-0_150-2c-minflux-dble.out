@@ -1,7 +1,7 @@
-Version: Plain vanilla, built on balrog at Tue Aug 30 02:36:54 PM CEST 2022
+Version: Plain vanilla, built on balrog.mbi-berlin.de at Fri Sep 23 06:33:15 PM CEST 2022
 
-Compiler: GCC version 12.1.1 20220721 [revision 4f15d2234608e82159d030dadb17af678cfad626]
-Build flags: -cpp -I . -D_REENTRANT -D __BUILD_ID__="Plain vanilla, built on balrog at Tue Aug 30 02:36:54 PM CEST 2022" -mtune=generic -march=x86-64 -O -fopenmp -fpre-include=/usr/include/finclude/math-vector-fortran.h
+Compiler: GCC version 12.2.1 20220830 [revision e927d1cf141f221c5a32574bde0913307e140984]
+Build flags: -cpp -I . -D_REENTRANT -D __BUILD_ID__="Plain vanilla, built on balrog.mbi-berlin.de at Fri Sep 23 06:33:15 PM CEST 2022" -mtune=generic -march=x86-64 -O -fopenmp -fpre-include=/usr/include/finclude/math-vector-fortran.h
 
   Integer kind = 4 (9 decimals)
      Real kind = 8 (15 decimals)
@@ -539,7 +539,7 @@ Solving for energy =  -0.9134227835934923822591713        0.00000000000000000000
 
 
 At energy = -.9134227835934923822591713 .000000000000000000000000 incoming = -.56261571081588069004E-3 0.78863054824325796999E-2 (main) 0.62510923167353009953E-4 (total)
-On the linear search step 1 displacement is 0.5161640135E-4 function = 0.6251092317E-4
+On the linear search step 1 displacement is 0.516164013460E-4 function = .625109231673496760313055E-4
 Solving for energy =  -0.9134227834986540228712215        0.000000000000000000000000     
 
  Refined boundary conditions:
@@ -705,7 +705,7 @@ Solving for energy =  -0.9134227835927508643010242        0.00000000000000000000
 
 
 At energy = -.9134227835927508643010242 .000000000000000000000000 incoming = -.56261566581784143264E-3 0.78863054856426195727E-2 (main) 0.62510923167351112599E-4 (total)
-On the linear search step 2 displacement is 0.3190114839E-11 function = 0.6251092317E-4
+On the linear search step 2 displacement is 0.319011483896E-11 function = .625109231673499470818486E-4
 Optimization of outgoing solution converged.
 Solving for energy =  -0.9134227836018441459842165        0.000000000000000000000000     
 
@@ -1111,6 +1111,14 @@ Optimization of boundary amplitudes converged after 1 iterations
      1     0.98987249297257         0.14195931690546          0.56261621687955E-003    0.78863054463305E-002    -0.56261621687955E-003    0.78863054463305E-002
      2     0.98987249213398         0.14195932275253         -0.17027444224810E-005   -0.23867712396287E-004     0.17027444224805E-005   -0.23867712396286E-004
 
+            Located solution at energy =   -0.9134227836018441459842165386362467         0.000000000000000000000000000000000     
+Outgoing amplitude in the main channel =    0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
+Incoming amplitude in the main channel =   -0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
+
+
+Using solutions to generate reverse outgoing for plotting
+
+
     Asymptotic solutions at ETA =    10.000000    
 
   Chan          Outgoing                      Grad Outgoing                           Incoming                      Grad Incoming                          Wronskian                 
@@ -1121,25 +1129,26 @@ Optimization of boundary amplitudes converged after 1 iterations
 
 At energy = -.9134227836018441459842165 .000000000000000000000000 incoming = -.56261621687955407859E-3 0.78863054463305225922E-2 (main) 0.62510923167351925751E-4 (total)
 
-    Outgoing solution is at the energy =   -0.9134227836018441459842165386362467         0.000000000000000000000000000000000     
-Outgoing amplitude in the main channel =    0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
-Incoming amplitude in the main channel =   -0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
+Optimized solution (min) is at the energy =   -0.9134227836018441459842165386362467         0.000000000000000000000000000000000     
+   Outgoing amplitude in the main channel =    0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
+   Incoming amplitude in the main channel =   -0.5626162168795540785906639236202409E-003   0.7886305446330522592179868013317900E-002
 
 
-              Timing data at 2022/09/01 19:42:23
+              Timing data at 2022/09/23 18:45:29
 
                                                        Total time (seconds)           Self time (seconds)
  Timer                                   Calls         --------------------           -------------------
  -----                                   -----           Real           CPU            Real           CPU
 
- start                                      1.          638.8         493.3             0.0           0.0
- Outgoing solution (min)                    1.          638.7         492.6             0.0           0.0
- Solve single energy                       37.          638.7         492.6             6.0          20.3
- Guess zeta1                               37.            3.4           6.7             3.4           6.7
- Bound solutions                           74.          495.3         389.8           495.3         389.8
- Channel coupling                          37.           13.3          47.5            13.3          47.5
- Continuum direction                       37.          117.2          24.7             0.1           0.0
- Continuum outbound                       370.          115.6          20.7           115.6          20.7
+ start                                      1.           11.6         371.1             0.0           0.0
+ Outgoing solution (min)                    1.           11.6         370.9             0.0           0.0
+ Solve single energy                       37.           11.6         370.9             0.2           3.9
+ Guess zeta1                               37.            0.2           7.1             0.2           7.1
+ Bound solutions                           74.            8.8         330.4             8.8         330.4
+ Channel coupling                          37.            0.4          24.3             0.4          24.3
+ Continuum direction                       37.            1.9           4.0             0.0           0.0
+ Continuum outbound                       370.            1.8           3.9             1.8           3.9
+ Dump Cartesian                             1.            0.1           0.9             0.1           0.9
 
- (  5 timers contributing less than 1% are not shown)
+ (  4 timers contributing less than 1% are not shown)
 
