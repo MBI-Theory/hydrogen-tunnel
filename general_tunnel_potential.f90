@@ -49,6 +49,7 @@ module general_tunnel_potential
   real(rk), parameter :: tong05_xe(0:8) = (/ 1.0_rk, 51.356_rk, 2.112_rk, -99.927_rk, 3.737_rk,  1.644_rk, 0.431_rk, 0._rk, 0._rk /)
   real(rk), parameter :: test_he  (0:8) = (/ 1.0_rk,  1.000_rk, 2.1325_rk,  0.000_rk, 0.000_rk,  0.000_rk, 0.000_rk, 0._rk, 0._rk /)
   real(rk), parameter :: test_3he (0:8) = (/ 1.0_rk, 1.2407_rk, 1.6527_rk,  0.000_rk, 0.000_rk,  0.000_rk, 0.000_rk, 0._rk, 0._rk /)
+  real(rk), parameter :: muller_ar(0:8) = (/ 1.0_rk,    5.4_rk, 1.0000_rk,  0.000_rk, 0.000_rk, 11.600_rk, 3.682_rk, 0._rk, 0._rk /)
   !
   real(rk), parameter :: sfg99_li(0:8)  = (/ 1.0,  2.0, 3.395,  3.212, 3.207, 0., 0., 0., 0. /)
   real(rk), parameter :: sfg99_na(0:8)  = (/ 1.0, 10.0, 7.902, 23.51 , 2.688, 0., 0., 0., 0. /)
@@ -179,6 +180,8 @@ module general_tunnel_potential
         call tong05(test_he,order,r0,ptab)
       case ('Test 3He')
         call tong05(test_3he,order,r0,ptab)
+      case ('argon')
+        call tong05(muller_ar,order,r0,ptab)
     end select
   end subroutine potential_u_r
   !

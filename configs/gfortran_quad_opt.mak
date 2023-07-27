@@ -4,7 +4,7 @@ BUILD_ID :="Optimized gfortran (quad), built on $(shell hostname) at $(shell dat
 #ACT2 =                                             # Disable FFTW3
  ACT2 = -e 's/^!\*ft/    /'                         # Enable FFTW3 calls
 # Add m64 -mavx -mavx2 etc non-native instruction sets are wanted.
-F90 = gfortran-12 -I. \
+F90 = gfortran-13 -I. \
       -O3 -flto -fprotect-parens -march=native -mtune=native -fopenmp \
       -ffast-math -fcx-fortran-rules -mrecip \
       -fno-realloc-lhs -fbacktrace -g \
